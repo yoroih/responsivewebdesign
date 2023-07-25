@@ -1,0 +1,12 @@
+<!--Principal-->
+<!--Styles-->
+<!--Olvide que la imagen también era un enlace y poner el atributo alt a la imagen-->
+<!--Olvide agregar atributo alt a la imagen-->
+<!--Olvide agregar atributo alt a la imagen-->
+<!--Olvide agregar otro section-->
+<!--olvide poner <form>-->
+<!--olvide poner action en el form-->
+<!--Siempre podemos anidar input dentro de label pero esta forma también es buena practica, incluso mejor-->
+<!--falta atributo checked-->
+<!--Olvide el atributo name="con el mismo nombre" y el atributo checked-->
+<!--Falto required y atributo name en input url->
