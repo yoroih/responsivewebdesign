@@ -1,0 +1,85 @@
+body{
+    background-image: url(../images/fondo-cafe.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/*main*/
+
+.menu{
+    background-color: burlywood;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.font{
+    font-family: Impact, serif;
+}
+
+.established{
+    font-style: italic;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 0 15px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+img {
+    width: 50px;
+    margin-top: -25px;
+}
+
+.product {
+    overflow: hidden;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+.food {
+    float: left;
+}
+
+.price {
+    float: right;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/*footer*/
+
+footer{
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: brown;
+}
+
+a:visited {
+    color: black;
+}
