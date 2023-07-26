@@ -72,14 +72,14 @@ a {
     color: black;
 }
 
+a:visited {
+    color: black;
+}
+
 a:hover {
     color: brown;
 }
 
-a:active {
-    color: brown;
-}
-
-a:visited {
-    color: black;
+address{
+    margin-bottom: 5px;
 }
