@@ -17,6 +17,10 @@ p {
     text-align: justify;
 }
 
+.code-example{
+    background-color: black;
+}
+
 .block{
     width: 300px;
     height: 35px;
