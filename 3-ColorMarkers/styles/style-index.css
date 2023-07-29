@@ -1,6 +1,9 @@
 body {
     background-color: #0e1e31;
     color: white;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
@@ -11,23 +14,72 @@ section {
 
 h1, h2 {
     text-align: center;
+    margin: 10px;
 }
 
 p {
     text-align: justify;
+    margin-bottom: 5px;
 }
 
-.code-example{
-    background-color: black;
+.code-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+pre {
+    background-color: black;
+    border-radius: 10px;
+    white-space: pre-line;
+    margin: 0px;
+    padding-left: 15px;
+    max-width: 400px;
+}
+
+span {
+    white-space: pre;
+}
+
+.selector{
+    color: goldenrod;
+}
+
+.symbol {
+    color: darkmagenta;
+}
+
+.property {
+    color: dodgerblue;
+}
+
+.function {
+    color: rgb(0, 255, 255);
+}
+
+.value {
+    color: darkgoldenrod;
 }
 
 .block{
-    width: 300px;
+    width: 250px;
     height: 35px;
     margin: 20px auto;
     background-color: red;
 }
+
+/* pre, code {
+    white-space: pre-line;
+}
+
+pre > code > span {
+    white-space: pre;
+}
+
+pre {
+    background-color: rgb(36, 12, 92);
+    padding-left: 10px;
+} */
 
 
 
