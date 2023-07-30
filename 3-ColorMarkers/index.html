@@ -13,64 +13,73 @@
 	<link href="styles/style-index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<header>
+	
+  <header>
 		<h1>CSS Color Markers</h1>
 	</header>
-	<main>
-		<section>
-			<h2>
-				<span class="red">R</span>
-				<span class="green">G</span>
-				<span class="blue">B</span>
-				Colors				
-			</h2>
-			<p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
+	
+  <main>
+		<div class="general-div">
+			<section class="rgb-section">
+				<h2>
+					<span class="red">R</span>
+					<span class="green">G</span>
+					<span class="blue">B</span>
+					Colors				
+				</h2>
+				<p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
 
-			<p>The general format for defining an RGB color in CSS is as follows:</p>
-			<!--GENERAL TYPE-->
-			<pre class="code-example">
-				<code>
-					<span class="selector">selector </span><span class="symbol">&#123;</span>
-					<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">red-value</span><span class="property">,</span> <span class="value">green-value</span><span class="property">,</span> <span class="value">blue-value</span><span class="property">)</span><span class="property">;</span>
-					<span class="symbol">&#125;</span>
-				</code>
-			</pre>
-			<!--SPECIFIC TYPE-->
-			<p class="color-paragraph">Therefore, to set a red, green or blue color, we have to write the following:</p>
-			<div class="color-content">
-				<pre class="code-example code-size">
+				<p>The general format for defining an RGB color in CSS is as follows:</p>
+				<!--GENERAL TYPE-->
+				<pre class="code-example">
 					<code>
 						<span class="selector">selector </span><span class="symbol">&#123;</span>
-						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+						<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">red-value</span><span class="property">,</span> <span class="value">green-value</span><span class="property">,</span> <span class="value">blue-value</span><span class="property">)</span><span class="property">;</span>
 						<span class="symbol">&#125;</span>
 					</code>
 				</pre>
-				<div class="block red position"></div>
-			</div>
+				<!--SPECIFIC TYPE-->
+				<p class="color-paragraph">Therefore, to set a red, green or blue color, we have to write the following:</p>
+				<div class="color-content">
+					<pre class="code-example code-size">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block red position"></div>
+				</div>
+								
+				<div class="color-content">
+					<pre class="code-example code-size">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block green position"></div>
+				</div>
 							
-			<div class="color-content">
-				<pre class="code-example code-size">
-					<code>
-						<span class="selector">selector </span><span class="symbol">&#123;</span>
-						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
-						<span class="symbol">&#125;</span>
-					</code>
-				</pre>
-				<div class="block green position"></div>
-			</div>
-						
-			<div class="color-content">
-				<pre class="code-example code-size">
-					<code>
-						<span class="selector">selector </span><span class="symbol">&#123;</span>
-						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">)</span><span class="property">;</span>
-						<span class="symbol">&#125;</span>
-					</code>
-				</pre>
-				<div class="block blue position"></div>
-			</div>
-		</section>
+				<div class="color-content">
+					<pre class="code-example code-size">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">)</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block blue position"></div>
+				</div>
+			</section>			
+      
+      <section class="hex-section">
+        <h2>HEX Colors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt exercitationem sequi vitae a eius minima officia sint alias culpa molestias aperiam ipsum, dolorum harum? Minus, aliquam? Mollitia minus quod praesentium.</p>
+      </section>
 
+    </div>
 
 		
 	</main>
