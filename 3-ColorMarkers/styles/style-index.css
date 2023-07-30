@@ -1,31 +1,31 @@
 body {
-    background-color: #0e1e31;
+    background-color: #0b2442;;
     color: white;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
+h1, h2 {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+/* RGB COLORS */
 section {
     width: 70%;
     padding: 10px 0;
     margin: 10px auto;
 }
 
-h1, h2 {
-    text-align: center;
-    margin: 10px;
-}
-
 p {
     text-align: justify;
-    margin-bottom: 5px;
+    margin: 10px 0px;
 }
 
 .code-example {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 450px;
 }
 
 pre {
@@ -34,7 +34,7 @@ pre {
     white-space: pre-line;
     margin: 0px;
     padding-left: 15px;
-    max-width: 400px;
+    width: 100%;
 }
 
 span {
@@ -61,11 +61,47 @@ span {
     color: darkgoldenrod;
 }
 
+.color-paragraph {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.color-content {
+    overflow: hidden;
+    width: 325px;
+    margin: 10px auto;
+}
+
+.code-size {
+    max-width: 250px;
+    float: left;
+}
+
+.position {
+    float: right;
+}
+
 .block{
-    width: 250px;
+    width: 35px;
     height: 35px;
     margin: 20px auto;
     background-color: red;
+}
+
+.red{
+    background-color: rgb(255, 0, 0);
+    border-radius: 7px;
+}
+
+.green{
+    background-color: rgb(0, 255, 0);
+    border-radius: 7px;
+}
+
+.blue{
+    background-color: rgb(0, 0, 255);
+    border-radius: 7px;
 }
 
 /* pre, code {
@@ -81,6 +117,23 @@ pre {
     padding-left: 10px;
 } */
 
+@media (max-width: 500px) {
+    .color-content {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .code-size {
+        float: none;
+        margin: 0;
+    }
 
+    .position {
+        float: none;
+    }
+}
+
+/* RGB COLORS */
 

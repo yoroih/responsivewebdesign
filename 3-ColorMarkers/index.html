@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--Global-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="images/favicon-32x32.png" rel="icon" type="image/png">
-  <!--Principal-->
-  <title>CSS Color Markers 👻</title>
-  <meta name="title" content="CSS Color Markers 👻">
-  <meta name="description" content="Usage demonstration of colors with CSS">
-  <!--Styles-->
-  <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+	<!--Global-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="images/favicon-32x32.png" rel="icon">
+	<!--Principal-->
+	<title>CSS Color Markers 👻</title>
+	<meta name="title" content="CSS Color Markers 👻">
+	<meta name="description" content="Usage demonstration of colors with CSS">
+	<!--Styles-->
+	<link href="styles/style-index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <h1>CSS Color Markers</h1>
-  </header>
-  <main>
+	<header>
+		<h1>CSS Color Markers</h1>
+	</header>
+	<main>
+		<section>
+			<h2>
+				<span class="red">R</span>
+				<span class="green">G</span>
+				<span class="blue">B</span>
+				Colors				
+			</h2>
+			<p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
 
-    <section class="rgb-type">
-      <h2>RGB Colors</h2>
-      <p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
+			<p>The general format for defining an RGB color in CSS is as follows:</p>
+			<!--GENERAL TYPE-->
+			<pre class="code-example">
+				<code>
+					<span class="selector">selector </span><span class="symbol">&#123;</span>
+					<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">red-value</span><span class="property">,</span> <span class="value">green-value</span><span class="property">,</span> <span class="value">blue-value</span><span class="property">)</span><span class="property">;</span>
+					<span class="symbol">&#125;</span>
+				</code>
+			</pre>
+			<!--SPECIFIC TYPE-->
+			<p class="color-paragraph">Therefore, to set a red, green or blue color, we have to write the following:</p>
+			<div class="color-content">
+				<pre class="code-example code-size">
+					<code>
+						<span class="selector">selector </span><span class="symbol">&#123;</span>
+						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+						<span class="symbol">&#125;</span>
+					</code>
+				</pre>
+				<div class="block red position"></div>
+			</div>
+							
+			<div class="color-content">
+				<pre class="code-example code-size">
+					<code>
+						<span class="selector">selector </span><span class="symbol">&#123;</span>
+						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+						<span class="symbol">&#125;</span>
+					</code>
+				</pre>
+				<div class="block green position"></div>
+			</div>
+						
+			<div class="color-content">
+				<pre class="code-example code-size">
+					<code>
+						<span class="selector">selector </span><span class="symbol">&#123;</span>
+						<span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">)</span><span class="property">;</span>
+						<span class="symbol">&#125;</span>
+					</code>
+				</pre>
+				<div class="block blue position"></div>
+			</div>
+		</section>
 
-      <p>The general format for defining an RGB color in CSS is as follows:</p>
-      
-      <!-- <div class="code-example code-scrollable">
-        <pre>
-          <code>
-              <span class="selector">selector: &#123;</span>
-              <span>  color: rgb(red-value, green-value, blue-value);</span>
-              <span>&#125;</span>
-          </code>
-        </pre>
-      </div> -->
-      
-      <div class="code-example">
-        <pre>
-          <code>
-              <span class="selector">selector </span><span class="symbol">&#123;</span>
-              <span class="property">  color: </code><span class="function">rgb</span><span class="property">(</span><span class="value">red-value</span><span class="property">,</span> <span class="value">green-value</span><span class="property">,</span> <span class="value">blue-value</span><span class="property">)</span><span class="property">;</span>
-              <span class="symbol">&#125;</span>
-          </code>
-        </pre>
-      </div>
 
-      <p></p>
-
-      <div class="block red"></div>
-      <div class="block green"></div>
-      <div class="block blue"></div>   
-    </section>
-    
-    <hr>
-    <section>
-      <h2>RGB Colors</h2>
-      <p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
-      <div class="block red"></div>
-      <div class="block green"></div>
-      <div class="block blue"></div>   
-    </section>
-
-  </main>
-  <footer>
-    <p>Example taken from freecodecamp.org &reg;</p>
-    <p>Made by Yoroi &#x2608;</p>
-  </footer>
+		
+	</main>
+	<footer>
+		<!-- <p>Example taken from freecodecamp.org &reg;</p>
+		<p>Made by Yoroi &#x2608;</p> -->
+	</footer>
 </body>
 </html>
