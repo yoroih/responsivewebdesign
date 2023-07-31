@@ -13,12 +13,11 @@
 	<link href="styles/style-index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
-  <header>
+	<header>
 		<h1>CSS Color Markers</h1>
 	</header>
-	
-  <main>
+
+	<main>
 		<div class="general-div">
 			<section class="rgb-section">
 				<h2>
@@ -41,10 +40,10 @@
 				<!--SPECIFIC TYPE-->
 				<p class="color-paragraph">Therefore, to set a red, green or blue color, we have to write the following:</p>
 				<div class="color-content">
-					<pre class="code-example code-size">
+					<pre class="code-example code-size-rgb">
 						<code>
 							<span class="selector">selector </span><span class="symbol">&#123;</span>
-							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+							<span class="property">  background-color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
 							<span class="symbol">&#125;</span>
 						</code>
 					</pre>
@@ -52,10 +51,10 @@
 				</div>
 								
 				<div class="color-content">
-					<pre class="code-example code-size">
+					<pre class="code-example code-size-rgb">
 						<code>
 							<span class="selector">selector </span><span class="symbol">&#123;</span>
-							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
+							<span class="property">  background-color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">,</span> <span class="value">0</span><span class="property">)</span><span class="property">;</span>
 							<span class="symbol">&#125;</span>
 						</code>
 					</pre>
@@ -63,23 +62,66 @@
 				</div>
 							
 				<div class="color-content">
-					<pre class="code-example code-size">
+					<pre class="code-example code-size-rgb">
 						<code>
 							<span class="selector">selector </span><span class="symbol">&#123;</span>
-							<span class="property">  color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">)</span><span class="property">;</span>
+							<span class="property">  background-color: </span><span class="function">rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span> <span class="value">0</span><span class="property">,</span> <span class="value">255</span><span class="property">)</span><span class="property">;</span>
 							<span class="symbol">&#125;</span>
 						</code>
 					</pre>
 					<div class="block blue position"></div>
 				</div>
 			</section>			
-      
-      <section class="hex-section">
-        <h2>HEX Colors</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt exercitationem sequi vitae a eius minima officia sint alias culpa molestias aperiam ipsum, dolorum harum? Minus, aliquam? Mollitia minus quod praesentium.</p>
-      </section>
+			
+			<section class="hex-section">
+				<h2>HEX Colors</h2>
+				<p>Hex color values start with a # character and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue. For example, "#4B5320".</p>
+				<p>It's complicated if you're not familiar, but similar to the decimal system (base 10, digits 0-9), only with digits 0-9 and A-F:</p>
+				
+				<pre  class="code-example">
+					<code>
+						<span class="function">0</span><span class="symbol">,</span> <span class="function">1</spa><span class="symbol">,</span> <span class="function">2</spa><span class="symbol">,</span> <span class="function">3</spa><span class="symbol">,</span> <span class="function">4</spa><span class="symbol">,</span> <span class="function">5</spa><span class="symbol">,</span> <span class="function">6</spa><span class="symbol">,</span> <span class="function">7</spa><span class="symbol">,</span> <span class="function">8</spa><span class="symbol">,</span> <span class="function">9</spa><span class="symbol">,</span> <span class="value">A</spa><span class="symbol">,</span> <span class="value">B</spa><span class="symbol">,</span> <span class="value">C</spa><span class="symbol">,</span> <span class="value">D</spa><span class="symbol">,</span> <span class="value">E</spa><span class="symbol">,</span> <span class="value">F</spa><span class="symbol">,</span>
+					</code>
+				</pre>
 
-    </div>
+				<p>Hex colors range from 00 (0%) to FF (100%). So, #FF0000 (Red) represents 100% red, 0% green, and 0% blue, equivalent to rgb(255, 0, 0).</p>
+
+				<div class="color-content-hex" >
+					<pre class="code-example code-size-hex">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color:</span> <span class="value">#ff0000</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block hex-red position"></div>
+				</div>
+
+				<div class="color-content-hex" >
+					<pre class="code-example code-size-hex">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color:</span> <span class="value">#00ff00</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block hex-green position"></div>
+				</div>
+
+				<div class="color-content-hex" >
+					<pre class="code-example code-size-hex">
+						<code>
+							<span class="selector">selector </span><span class="symbol">&#123;</span>
+							<span class="property">  color:</span> <span class="value">#0000ff</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block hex-blue position"></div>
+				</div>
+
+
+			</section>
+		</div>
 
 		
 	</main>
