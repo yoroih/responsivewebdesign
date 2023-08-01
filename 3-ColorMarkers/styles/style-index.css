@@ -16,15 +16,14 @@ h1, h2 {
     gap: 50px;
 }
 
-.rgb-section {
+.left-section {
     flex: 1;
     margin-left: 15px;
 }
 
-.hex-section {
+.right-section {
     flex: 1;
     margin-right: 15px;
-
 }
 
 /* RGB COLORS */
@@ -89,7 +88,7 @@ span {
     margin: 10px auto;
 }
 
-.code-size-rgb {
+.code-size {
     max-width: 270px;
     float: left;
 }
@@ -102,20 +101,22 @@ span {
     width: 35px;
     height: 35px;
     margin: 20px auto;
+    border-radius: 7px;
 }
 
-.red{
+.rgb-red{
     background-color: rgb(255, 0, 0);
-    border-radius: 7px;
 }
 
-.green{
+.rgb-green{
     background-color: rgb(0, 255, 0);
-    border-radius: 7px;
 }
 
-.blue{
+.rgb-blue{
     background-color: rgb(0, 0, 255);
+}
+
+.rgb-words{
     border-radius: 7px;
 }
 
@@ -147,29 +148,51 @@ pre {
 
 .hex-red {
     background-color: #ff0000;
-    border-radius: 7px;
 }
 
 .hex-green {
     background-color: #00ff00;
-    border-radius: 7px;
+
 }
 
 .hex-blue {
     background-color: #0000ff;
-    border-radius: 7px;
+}
+
+/*HSL MODEL*/
+.color-content-hsl {
+    overflow: hidden;
+    width: 380px;
+    margin: 10px auto;
+}
+
+.code-size-hsl {
+    max-width: 300px;
+    float: left;
+}
+
+.hsl-red{
+    background-color: hsl(0, 100%, 50%);
+}
+
+.hsl-green{
+    background-color: hsl(120, 100%, 50%);
+}
+
+.hsl-blue{
+    background-color: hsl(240, 100%, 50%);
 }
 
 /*MEDIA QUERYS*/
 @media (max-width: 750px) {
-    .color-content, .color-content-hex {
+    .color-content, .color-content-hex, .color-content-hsl {
         width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .code-size, .code-size-hex {
+    .code-size, .code-size-hex, .code-size-hsl {
         float: none;
         margin: 0;
     }
@@ -182,7 +205,6 @@ pre {
 
 /*GENERAL QUERY*/
 @media (max-width: 650px) {
-    
     .general-div {
         flex-direction: column;
         gap: 10px;
@@ -190,10 +212,9 @@ pre {
         align-items: center;
     }
 
-    .rgb-section, .hex-section{
+    .left-section, .right-section{
         margin: 0 20px;
     }
-
 }
 
 @media (max-width: 450px) {
