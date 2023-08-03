@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--Global-->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="images/favicon-32x32.png" rel="icon">
-	<!--Principal-->
-	<title>CSS Color Markers 👻</title>
-	<meta name="title" content="CSS Color Markers 👻">
-	<meta name="description" content="Usage demonstration of colors with CSS">
-	<!--Styles-->
-	<link href="styles/style-index.css" rel="stylesheet" type="text/css">
+    <!--Global-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon-32x32.png" rel="icon">
+    <!--Principal-->
+    <title>CSS Color Markers 👻</title>
+    <meta name="title" content="CSS Color Markers 👻">
+    <meta name="description" content="Usage demonstration of colors with CSS">
+    <!--Styles-->
+    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
 		<h1>CSS Color Markers</h1>
 	</header>
-
 	<main>
 		<div class="general-div">
 			<section class="left-section">
@@ -26,10 +25,11 @@
 					<span class="rgb-blue rgb-words">B</span>
 					Colors				
 				</h2>
-				<p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
 
+				<p>RGB refers to the three primary colors of light used to create a wide range of colors. Each color is represented by a numerical value ranging from 0 to 255 for each component of red, green, and blue.</p>
 				<p>The general format for defining an RGB color in CSS is as follows:</p>
-				<!--GENERAL TYPE-->
+
+				<!--General Type-->
 				<pre class="code-example">
 					<code>
 						<span class="selector">selector</span><span class="symbol"> &#123;</span>
@@ -37,8 +37,10 @@
 						<span class="symbol">&#125;</span>
 					</code>
 				</pre>
-				<!--SPECIFIC TYPE-->
+
 				<p>Therefore, to set a red, green or blue color, we have to write the following:</p>
+			
+				<!--Specific Type-->
 				<div class="color-content">
 					<pre class="code-size">
 						<code>
@@ -49,7 +51,7 @@
 					</pre>
 					<div class="block rgb-red position"></div>
 				</div>
-								
+				
 				<div class="color-content">
 					<pre class="code-size">
 						<code>
@@ -60,7 +62,7 @@
 					</pre>
 					<div class="block rgb-green position"></div>
 				</div>
-							
+
 				<div class="color-content">
 					<pre class="code-size">
 						<code>
@@ -71,13 +73,14 @@
 					</pre>
 					<div class="block rgb-blue position"></div>
 				</div>
-			</section>			
-			
+			</section>
+		
 			<section class="right-section">
 				<h2>HEX Colors</h2>
 				<p>Hex color values start with a # character and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue. For example, "#4B5320".</p>
 				<p>It's complicated if you're not familiar, but similar to the decimal system (base 10, digits 0-9), only with digits 0-9 and A-F:</p>
 				
+				<!--General type-->
 				<pre  class="code-example">
 					<code>
 						<span class="function">0</span><span class="symbol">,</span><span class="function"> 1</span><span class="symbol">,</span><span class="function"> 2</span><span class="symbol">,</span><span class="function"> 3</span><span class="symbol">,</span><span class="function"> 4</span><span class="symbol">,</span><span class="function"> 5</span><span class="symbol">,</span><span class="function"> 6</span><span class="symbol">,</span><span class="function"> 7</span><span class="symbol">,</span><span class="function"> 8</span><span class="symbol">,</span><span class="function"> 9</span><span class="symbol">,</span><span class="value"> A</span><span class="symbol">,</span><span class="value"> B</span><span class="symbol">,</span><span class="value"> C</span><span class="symbol">,</span><span class="value"> D</span><span class="symbol">,</span><span class="value"> E</span><span class="symbol">,</span><span class="value"> F</span>
@@ -86,6 +89,7 @@
 
 				<p>Hex colors range from 00 (0%) to FF (100%). So, #FF0000 (Red) represents 100% red, 0% green, and 0% blue, equivalent to rgb(255, 0, 0).</p>
 
+				<!--Specific type-->
 				<div class="color-content" >
 					<pre class="code-size-hex">
 						<code>
@@ -118,8 +122,6 @@
 					</pre>
 					<div class="block hex-blue position"></div>
 				</div>
-
-
 			</section>
 		</div>
 
@@ -154,7 +156,7 @@
 					</pre>
 					<div class="block hsl-red position"></div>
 				</div>
-								
+
 				<div class="color-content">
 					<pre class="code-size-hsl">
 						<code>
@@ -188,13 +190,12 @@
 						<span class="property">  background-color:</span><span class="function"> hsl</span><span class="property">(</span><span class="value">Hue</span><span class="property">,</span><span class="value"> Saturation%</span><span class="property">,</span><span class="value"> Lightness%</span><span class="property">)</span><span class="property">;</span>
 						<span class="symbol">&#125;</span>
 					</code>
-				</pre>	
+				</pre>
 			</section>
 		</div>
 	</main>
 	<footer>
-		<!-- <p>Example taken from freecodecamp.org &reg;</p>
-		<p>Made by Yoroi &#x2608;</p> -->
+
 	</footer>
 </body>
 </html>

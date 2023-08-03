@@ -1,5 +1,5 @@
 body {
-    background-color: #1c2738;
+    background-color: #2d4a75;
     color:  whitesmoke;
     max-width: 1000px;
     margin-left: auto;
@@ -8,27 +8,29 @@ body {
 
 h1, h2 {
     text-align: center;
-    margin: 15px 0 10px 0;
+    margin: 5px 0 10px 0;
+    padding: 0;
 }
 
 .general-div {
     display: flex;
     gap: 50px;
+    margin: 0 15px;
 }
 
 .left-section {
     flex: 1;
-    margin-left: 15px;
+    max-width: 100%;
 }
 
 .right-section {
     flex: 1;
-    margin-right: 15px;
+    max-width: 100%;
 }
 
 /* RGB COLORS */
 section {
-    width: 70%;
+    width: 100%;
     padding: 10px 0;
     margin: 10px auto;
 }
@@ -38,18 +40,16 @@ p {
     margin: 10px 0px;
 }
 
-.code-example {
-    margin: 0 auto;
-    max-width: 400px;
-}
-
 pre {
     background-color: black;
     border-radius: 10px;
     white-space: pre-line;
-    margin: 0px;
-    width: 100%;
-    padding-left: 15px;
+    padding-left: 10px;
+}
+
+.code-example {
+    margin: 0 auto;
+    width: 400;
 }
 
 span {
@@ -83,14 +83,17 @@ span {
 }
 
 .color-content {
-    overflow: hidden;
-    width: 350px;
-    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px auto;
 }
 
 .code-size {
-    max-width: 270px;
     float: left;
+    width: 280px;
+    margin: 5px 0;
 }
 
 .position {
@@ -100,7 +103,6 @@ span {
 .block{
     width: 35px;
     height: 35px;
-    margin: 20px auto;
     border-radius: 7px;
 }
 
@@ -135,15 +137,11 @@ pre {
 /* RGB COLORS */
 
 /* HEX COLORS */
-.color-content-hex {
-    overflow: hidden;
-    width: 230px;
-    margin: 10px auto;
-}
 
 .code-size-hex {
-    max-width: 150px;
     float: left;
+    width: 150px;
+    margin: 5px 0;
 }
 
 .hex-red {
@@ -160,15 +158,10 @@ pre {
 }
 
 /*HSL MODEL*/
-.color-content-hsl {
-    overflow: hidden;
-    width: 380px;
-    margin: 10px auto;
-}
-
 .code-size-hsl {
-    max-width: 300px;
     float: left;
+    width: 300px;
+    margin: 5px 0;
 }
 
 .hsl-red{
@@ -185,11 +178,12 @@ pre {
 
 /*MEDIA QUERYS*/
 @media (max-width: 750px) {
-    .color-content, .color-content-hex, .color-content-hsl {
+    .color-content {
         width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .code-size, .code-size-hex, .code-size-hsl {
@@ -200,7 +194,6 @@ pre {
     .position {
         float: none;
     }
-
 }
 
 /*GENERAL QUERY*/
@@ -210,6 +203,7 @@ pre {
         gap: 10px;
         justify-content: center;
         align-items: center;
+        margin: 0px 20px;
     }
 
     .left-section, .right-section{
