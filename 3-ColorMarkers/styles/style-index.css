@@ -1,38 +1,30 @@
 body {
     background-color: #2d4a75;
-    color:  whitesmoke;
+    color: whitesmoke;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h1, h2 {
+h1,h2 {
     text-align: center;
-    margin: 5px 0 10px 0;
-    padding: 0;
+    margin: 15px auto;
 }
 
-.general-div {
-    display: flex;
-    gap: 50px;
-    margin: 0 15px;
-}
-
-.left-section {
-    flex: 1;
-    max-width: 100%;
-}
-
-.right-section {
-    flex: 1;
-    max-width: 100%;
-}
-
-/* RGB COLORS */
-section {
-    width: 100%;
-    padding: 10px 0;
+h2{
     margin: 10px auto;
+}
+
+.general-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+section{
+    width: 450px;
 }
 
 p {
@@ -47,13 +39,13 @@ pre {
     padding-left: 10px;
 }
 
-.code-example {
-    margin: 0 auto;
-    width: 400;
+span{
+    white-space: pre;
 }
 
-span {
-    white-space: pre;
+.code-example{
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .selector{
@@ -76,34 +68,34 @@ span {
     color: darkgoldenrod;
 }
 
-.color-paragraph {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 25px;
-}
-
-.color-content {
+.color-content{
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 0px auto;
 }
 
-.code-size {
-    float: left;
-    width: 280px;
+.code-size-rgb{
+    order: 1;
+    width: 270px;
     margin: 5px 0;
 }
 
-.position {
-    float: right;
+.position{
+    order: 2;
 }
 
 .block{
     width: 35px;
     height: 35px;
     border-radius: 7px;
+}
+
+/*----------------------RGB COLORES-------------------*/
+.code-size-rgb{
+    order: 1;
+    width: 270px;
+    margin: 5px 0;
 }
 
 .rgb-red{
@@ -122,25 +114,11 @@ span {
     border-radius: 7px;
 }
 
-/* pre, code {
-    white-space: pre-line;
-}
+/*----------------------HEX COLORES-------------------*/
 
-pre > code > span {
-    white-space: pre;
-}
-
-pre {
-    background-color: rgb(36, 12, 92);
-    padding-left: 10px;
-} */
-/* RGB COLORS */
-
-/* HEX COLORS */
-
-.code-size-hex {
-    float: left;
-    width: 150px;
+.code-size-hex{
+    order: 1;
+    width: 130px;
     margin: 5px 0;
 }
 
@@ -157,9 +135,10 @@ pre {
     background-color: #0000ff;
 }
 
-/*HSL MODEL*/
+/*----------------------HSL MODEL-------------------*/
+
 .code-size-hsl {
-    float: left;
+    order: 1;
     width: 300px;
     margin: 5px 0;
 }
@@ -175,48 +154,4 @@ pre {
 .hsl-blue{
     background-color: hsl(240, 100%, 50%);
 }
-
-/*MEDIA QUERYS*/
-@media (max-width: 750px) {
-    .color-content {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .code-size, .code-size-hex, .code-size-hsl {
-        float: none;
-        margin: 0;
-    }
-
-    .position {
-        float: none;
-    }
-}
-
-/*GENERAL QUERY*/
-@media (max-width: 650px) {
-    .general-div {
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 20px;
-    }
-
-    .left-section, .right-section{
-        margin: 0 20px;
-    }
-}
-
-@media (max-width: 450px) {
-    
-    span {
-        white-space: pre-line;
-    }
-
-}
-
 
