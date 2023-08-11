@@ -1,5 +1,5 @@
 body {
-    background-color: #0e1e31;
+    background-color: #162f4e;
     color: whitesmoke;
     max-width: 1000px;
     margin-left: auto;
@@ -31,6 +31,10 @@ section{
 p {
     text-align: justify;
     margin: 10px 0px;
+}
+
+.note{
+    color: #FCB22B;
 }
 
 pre {
@@ -180,6 +184,22 @@ span{
     hsl(120, 100%, 50%),
     hsl(240, 100%, 50%));
 }
+/*----------------------Alpha-channel-------------------*/
+
+.code-size-alpha{
+    order: 1;
+    width: 310px;
+    margin: 5px 0;
+}
+
+.alpha-color1{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.alpha-color2{
+    background-color: hsla(60, 100%, 50%, 1);
+}
+
 
 /*----------------------MEDIA QUERYS-------------------*/
 

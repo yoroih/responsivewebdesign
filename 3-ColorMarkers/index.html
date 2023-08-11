@@ -198,7 +198,7 @@
 				</ul>
 
         <div class="color-content">
-          <pre class="code-size-grad">
+        <pre class="code-size-grad">
             <code>
               <span class="selector">selector</span><span class="symbol"> &#123;</span>
               <span class="property">  background:</span><span class="function"> linear-gradient</span><span class="property">(</span><span class="value">0deg</span><span class="property">,</span>
@@ -236,6 +236,63 @@
           </pre>
           <div class="block grad-blue position"></div>
         </div>
+			</section>
+
+			<section class="section-5">
+
+				<h2>
+					<span class="rgb-red rgb-words">R</span>
+					<span class="rgb-green rgb-words">G</span>
+					<span class="rgb-blue rgb-words">B</span>
+					a - Function				
+				</h2>
+
+				<p>It's a function similar to RGB, with the only difference being that it has an additional argument for the AlphaValue, where we can input values from 0 to 1.0. This allows us to choose the transparency of the color, where 0 is the most transparent and 1.0 is completely solid.</p>
+
+				<pre class="code-example">
+					<code>
+						<span class="selector">selector</span><span class="symbol"> &#123;</span>
+						<span class="property">  color:</span><span class="function"> rgba</span><span class="property">(</span><span class="value">redValue</span><span class="property">,</span><span class="value"> greenValue</span><span class="property">,</span><span class="value"> blueValue</span><span class="property">,</span><span class="value"> alphaValue</span><span class="property">)</span><span class="property">;</span>
+						<span class="symbol">&#125;</span>
+					</code>
+				</pre>
+
+				<p>It's a function similar to RGB, with the only difference being that it includes an additional argument for the AlphaValue, where we can input values from 0 to 1.0. This allows us to control the transparency of the color, with 0 being the most transparent and 1.0 the most solid.</p>
+
+				<pre class="code-example">
+					<code>
+						<span class="selector">selector</span><span class="symbol"> &#123;</span>
+						<span class="property">  background-color:</span><span class="function"> hsla</span><span class="property">(</span><span class="value">Hue</span><span class="property">,</span><span class="value"> Sat%</span><span class="property">,</span><span class="value"> Light%</span><span class="property">,</span><span class="value"> alphaValue</span><span class="property">)</span><span class="property">;</span>
+						<span class="symbol">&#125;</span>
+					</code>
+				</pre>
+
+				<p>This space is known as the alpha channel or transparency channel, which we can also use with the HSL function.</p>
+
+				<p class="note">Note: Sometimes it's not necessary to use rgba or hsla functions, as it works by simply adding the alphaValue, but for good practices, it's recommended to include the complete notation of the function (rgba/hsla).</p>
+
+				<div class="color-content">
+					<pre class="code-size-alpha">
+						<code>
+							<span class="selector">selector</span><span class="symbol"> &#123;</span>
+							<span class="property">  background-color:</span><span class="function"> rgba</span><span class="property">(</span><span class="value">255</span><span class="property">,</span><span class="value"> 255</span><span class="property">,</span><span class="value"> 0</span><span class="property">,</span><span class="value"> 0.5</span><span class="property">)</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block alpha-color1 position"></div>
+				</div>
+
+				<div class="color-content">
+					<pre class="code-size-alpha">
+						<code>
+							<span class="selector">selector</span><span class="symbol"> &#123;</span>
+							<span class="property">  background-color:</span><span class="function"> hsla</span><span class="property">(</span><span class="value">60</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">,</span><span class="value"> 1</span><span class="property">)</span><span class="property">;</span>
+							<span class="symbol">&#125;</span>
+						</code>
+					</pre>
+					<div class="block alpha-color2 position"></div>
+				</div>
+
 			</section>
 		</div>
 	</main>
