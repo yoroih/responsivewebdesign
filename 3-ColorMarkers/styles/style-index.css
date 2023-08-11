@@ -1,5 +1,5 @@
 body {
-    background-color: #2d4a75;
+    background-color: #0e1e31;
     color: whitesmoke;
     max-width: 1000px;
     margin-left: auto;
@@ -25,6 +25,7 @@ h2{
 
 section{
     width: 450px;
+    padding: 0 10px;
 }
 
 p {
@@ -70,15 +71,9 @@ span{
 
 .color-content{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-}
-
-.code-size-rgb{
-    order: 1;
-    width: 270px;
-    margin: 5px 0;
 }
 
 .position{
@@ -89,6 +84,7 @@ span{
     width: 35px;
     height: 35px;
     border-radius: 7px;
+    border: 2px solid white;
 }
 
 /*----------------------RGB COLORES-------------------*/
@@ -155,3 +151,53 @@ span{
     background-color: hsl(240, 100%, 50%);
 }
 
+/*----------------------GRADIENT-------------------*/
+
+.code-size-grad{
+    order: 1;
+    width: 280px;
+    margin: 5px 0;
+}
+
+.grad-red{
+    background: 
+    linear-gradient(0deg, 
+    rgb(255,0,0), 
+    rgb(0,255,0), 
+    rgb(0,0,255));
+}
+
+.grad-green{
+    background: 
+    linear-gradient(120deg,
+    #ff0000,#00ff00,#0000ff);
+}
+
+.grad-blue{
+    background: 
+    linear-gradient(240deg,
+    hsl(0, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(240, 100%, 50%));
+}
+
+/*----------------------MEDIA QUERYS-------------------*/
+
+@media (max-width: 500px) {
+
+    .color-content {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    span {
+        white-space: pre-line;
+    }
+}
+
+@media (max-width: 300px){
+    .code-size-rgb, .code-size-hsl, .code-size-hex{
+        width: fit-content;
+    }
+}

@@ -159,7 +159,7 @@
 					<pre class="code-size-hsl">
 						<code>
 							<span class="selector">selector</span><span class="symbol"> &#123;</span>
-							<span class="property">  background-color:</span><span class="function"> hsl</span><span class="property">(</span><span class="value"> 120</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">)</span><span class="property">;</span>
+							<span class="property">  background-color:</span><span class="function"> hsl</span><span class="property">(</span><span class="value">120</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">)</span><span class="property">;</span>
 							<span class="symbol">&#125;</span>
 						</code>
 					</pre>
@@ -180,15 +180,62 @@
 
 			<section class="section-4">
 				<h2>Gradient</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam voluptates voluptate magni laudantium ipsa qui porro incidunt beatae, quibusdam unde, quam, deserunt nisi laborum! Dolorum unde ducimus perferendis vero!</p>
+				<p>A gradient is when one color transitions into another. For this, we have the CSS linear-gradient function, which allows controlling the direction of the transition along a line and which colors are used. Although it actually creates an image element and is commonly combined with the background property that can accept an image as a value.</p>
 
 				<pre class="code-example">
 					<code>
 						<span class="selector">selector</span><span class="symbol"> &#123;</span>
-						<span class="property">  background-color:</span><span class="function"> hsl</span><span class="property">(</span><span class="value">Hue</span><span class="property">,</span><span class="value"> Saturation%</span><span class="property">,</span><span class="value"> Lightness%</span><span class="property">)</span><span class="property">;</span>
+						<span class="property">  background:</span>
+            <span class="function">  linear-gradient</span><span class="property">(</span><span class="value">direct°</span><span class="property">,</span><span class="value"> col1 5%</span><span class="property">,</span><span class="value"> col2 5px</span><span class="property">,</span><span class="value">...</span><span class="property">)</span><span class="property">;</span>
 						<span class="symbol">&#125;</span>
 					</code>
 				</pre>
+
+				<ul>
+					<li>direct° refers to "gradientDirection", which is the direction of the line used for the transition. This value should be entered in degrees between 0 and 360 with a "deg" suffix</li>
+					<li>The values of col1, col2, or more can be entered using rgb, hex, or hsl functions.</li>
+          <li>We can control what percentage of the image can be filled with a color, which we do using a length unit like px or by putting percentages right after the values of colors.</li>
+				</ul>
+
+        <div class="color-content">
+          <pre class="code-size-grad">
+            <code>
+              <span class="selector">selector</span><span class="symbol"> &#123;</span>
+              <span class="property">  background:</span><span class="function"> linear-gradient</span><span class="property">(</span><span class="value">0deg</span><span class="property">,</span>
+              <span class="function">  rgb</span><span class="property">(</span><span class="value">255</span><span class="property">,</span><span class="value"> 0</span><span class="property">,</span><span class="value"> 0</span><span class="property">)</span><span class="property">,</span>
+              <span class="function">  rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span><span class="value"> 255</span><span class="property">,</span><span class="value"> 0</span><span class="property">)</span><span class="property">,</span>
+              <span class="function">  rgb</span><span class="property">(</span><span class="value">0</span><span class="property">,</span><span class="value"> 0</span><span class="property">,</span><span class="value"> 255</span><span class="property">)</span><span class="property">)</span><span class="property">;</span>
+              <span class="symbol">&#125;</span>
+            </code>
+          </pre>
+          <div class="block grad-red position"></div>
+        </div>
+
+        <div class="color-content">
+          <pre class="code-size-grad">
+            <code>
+              <span class="selector">selector</span><span class="symbol"> &#123;</span>
+              <span class="property">  background:</span><span class="function"> linear-gradient</span><span class="property">(</span><span class="value">120deg</span><span class="property">,</span>
+              <span class="value">  #ff0000</span><span class="property">,</span><span class="value"> #ff0000</span><span class="property">,</span><span class="value"> #ff0000</span><span class="property">)</span><span class="property">;</span>
+              <span class="symbol">&#125;</span>
+            </code>
+          </pre>
+          <div class="block grad-green position"></div>
+        </div>
+        
+        <div class="color-content">
+          <pre class="code-size-grad">
+            <code>
+              <span class="selector">selector</span><span class="symbol"> &#123;</span>
+              <span class="property">  background:</span><span class="function"> linear-gradient</span><span class="property">(</span><span class="value">240deg</span><span class="property">,</span>
+              <span class="function">  hsl</span><span class="property">(</span><span class="value">0</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">)</span><span class="property">,</span>
+              <span class="function">  hsl</span><span class="property">(</span><span class="value">120</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">)</span><span class="property">,</span>
+              <span class="function">  hsl</span><span class="property">(</span><span class="value">240</span><span class="property">,</span><span class="value"> 100%</span><span class="property">,</span><span class="value"> 50%</span><span class="property">)</span><span class="property">)</span><span class="property">;</span>
+              <span class="symbol">&#125;</span>
+            </code>
+          </pre>
+          <div class="block grad-blue position"></div>
+        </div>
 			</section>
 		</div>
 	</main>
