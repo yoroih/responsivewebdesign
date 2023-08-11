@@ -6,7 +6,7 @@ body {
     margin-right: auto;
 }
 
-h1,h2 {
+h1,h2,h5 {
     text-align: center;
     margin: 15px auto;
 }
@@ -33,8 +33,14 @@ p {
     margin: 10px 0px;
 }
 
+.color-wheel {
+    color:#FCB22B;
+    text-decoration: none;
+}
+
 .note{
     color: #FCB22B;
+    text-align: center;
 }
 
 pre {
@@ -198,6 +204,22 @@ span{
 
 .alpha-color2{
     background-color: hsla(60, 100%, 50%, 1);
+}
+
+/*----------------------FOOTER-------------------*/
+
+.reference{
+    color: blanchedalmond;
+}
+
+.reference:hover{
+    color: green;
+}
+
+.footer{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
 }
 
 
