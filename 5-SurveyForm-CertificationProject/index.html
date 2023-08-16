@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Global-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Principal-->
+  <title>Survey Form 📋</title>
+  <meta name="title" content="Survey Form 📋">
+  <meta name="description" content="FreeCodeCamp.org Certification Project Practice Form">
+  <!--styles-->
+  <link rel="stylesheet" href="styles/styles-index.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a few minutes to carefully complete your information.</p>
+  </header>
+  <main>
+    <form action="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input type="text" id="name" name="name" required pattern="[a-zA-ZÑñ\s]+" placeholder="Enter your name" title="Only uppercase and lowercase letters." ></label>
+
+        <label for="email" id="email-label">Email<input type="email" id="email" name="email" required pattern="^[\wñÑ]+@[\w]+\.[a-zA-Z]{2,}$" placeholder="Enter your email" title="Only letters, numbers or underscores."></label>
+
+        <label for="number" id="number-label">Age (optional)<input type="number" id="number" name="number" pattern="[0-9]+" min="16" max="120" placeholder="Age" title="Please enter only numbers between 16 and 120."></label>
+
+        <label for="dropdown">Which option best describes your current role?
+          <select name="dropdown" id="dropdown">
+            <option value="1" disabled selected>Select current role</option>
+            <option value="2">Student</option>
+            <option value="3">Full Time Job</option>
+            <option value="4">Full Time Learner</option>
+            <option value="5">Prefer not say</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+
+        <label>Would you recommend to a friend?</label>
+        <label for="definitely"><input type="radio" id="definitely" value="definitely" name="recommend" class="inline"> Definitely</label>
+        <label for="maybe"><input type="radio" id="maybe" value="maybe" name="recommend" class="inline"> Maybe</label>
+        <label for="notsure"><input type="radio" id="notsure" value="notsure" name="recommend" class="inline"> Not sure</label>
+
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label for="frontend"><input type="checkbox" id="frontend" name="frontend" value="front" class="inline"> Front-end Projects</label>
+        <label for="backend"><input type="checkbox" id="backend" name="backend" value="back" class="inline"> Back-end Projects</label>
+        <label for="data"><input type="checkbox" id="data" name="data" value="data" class="inline"> Data Visualization</label>
+        <label for="Challenges"><input type="checkbox" id="Challenges" name="Challenges" value="challenges" class="inline"> Challenges</label>
+        <label for="opensource"><input type="checkbox" id="" name="opensource" value="opensource" class="inline"> Open Source Community</label>
+        <label for="gitter"><input type="checkbox" id="gitter" name="gitter" value="gitter" class="inline"> Gitter help rooms</label>
+        <label for="videos"><input type="checkbox" id="videos" name="videos" value="videos" class="inline"> Videos</label>
+        <label for="citymeetups"><input type="checkbox" id="citymeetups" name="citymeetups" value="citymeetups" class="inline"> City Meetups</label>
+        <label for="wiki"><input type="checkbox" id="wiki" name="wiki" value="wiki" class="inline"> Wiki</label>
+        <label for="forum"><input type="checkbox" id="forum" name=forum" value="forum" class="inline"> Forum</label>
+        <label for="additionalcourses"><input type="checkbox" id="additionalcourses" name="additionalcourses" value="additionalcourses" class="inline"> Additional Courses</label>
+
+        <label for="sugest">Comments or suggestions?<textarea name="sugest" id="sugest" cols="30" rows="3" placeholder="Enter your comment here..."></textarea></label>
+
+        <input type="submit" value="Submit" id="submit">
+
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
