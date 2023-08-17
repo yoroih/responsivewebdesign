@@ -1,6 +1,6 @@
 body {
-
   color: #f3f3f3;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   
   background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8),rgba(136, 136, 206, 0.5)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
@@ -8,10 +8,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  backdrop-filter: blur(3px);
 }
 
 h1,p{
   text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 1.125rem;
 }
 
 form{
@@ -19,7 +25,7 @@ form{
   margin: 0 auto;
   background: rgba(27, 27, 50, 0.8);
   padding: 2.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 fieldset{
@@ -30,16 +36,53 @@ fieldset{
 
 label{
   display: block;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  font-size: 1.125rem;
 }
 
 input, select, textarea{
   width: 100%;
+  height: 2rem;
+  background-color: #e0e0e2;
+  color: #000;
+  margin: 3px 0 0 0;
   padding: 0;
   border: none;
+  border-radius: 0.5rem;
+  text-indent: 10px;
+}
+
+.checkareas{
+  margin-bottom: 20px;
+}
+
+.checkareas>label{
+  margin: 0;
 }
 
 .inline{
   width: unset;
+  vertical-align: middle;
+  height: 1rem;
+  margin: 0 0.5rem 0.2rem 1rem;
 }
 
+textarea{
+  resize: none;
+  height: 80px;
+  padding-top: 5px;
+}
 
+input[type="submit"]{
+  display: block;
+  max-width: 120px;
+  height: 2.5em;
+
+  margin: 0 auto;
+  font-weight: bold;
+  background-color: rgb(7, 56, 31);
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
