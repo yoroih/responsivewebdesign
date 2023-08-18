@@ -1,0 +1,18 @@
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #0a0a23;
+}
+
+header{
+  color: white;
+  background-color: #0a0a23;
+  border-bottom: 4px solid #fdb347;
+  text-align: center;
+  padding: 32px;
+}
+
+h1{
+  margin: auto 0;
+}
