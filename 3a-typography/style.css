@@ -23,9 +23,8 @@ body{
   font-weight: 800;
 }
 
-.divider{
+.small-text p{
   border-bottom: 1px solid #888989;
-  margin: 2px 0;
 }
 
 .divider-large {
@@ -36,7 +35,6 @@ body{
   border-bottom: 5px solid white;
 }
 
-
 .small-text{
   font-size: 0.85rem;
 }
@@ -45,6 +43,8 @@ h1{
   text-align: center;
   margin: -4px 0;
   letter-spacing: 0.15px;
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
 }
 
 p{
@@ -62,4 +62,41 @@ p{
 .calories-size{
   font-size: 1.2em;
   margin: -4px -2px;
+}
+
+.right{
+  justify-content: flex-end;
+}
+
+.indent{
+  margin-left: 1em;
+}
+
+.double-indent{
+  margin-left: 2em;
+}
+
+.note{
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+  text-align: justify;
+}
+
+h5{
+  font-size: 0.6rem;
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+  margin: 2px 0;
+}
+
+.credits{
+  text-align: center;
+  font-size: 9px;
+}
+
+a{
+  color: white;
 }
