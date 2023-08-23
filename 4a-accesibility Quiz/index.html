@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Global-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Principal-->
+  <title>Layout Quiz📋</title>
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+  <meta name="title" content="HTML/CSS Quiz to practice accesibility 📋">
+  <meta name="description" content="  A website for a quiz about HTML and CSS, designed to practice making things accessible using HTML and CSS">
+  <!--styles-->
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="  https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamp logo" id="logo">
+    <h1>HTML/CSS Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="">INFO</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section class="section-group" role="region" aria-labelledby="student-info">
+        <h2 class="underlined">Student Info</h2>
+        <label for="student-name">Name: </label>
+        <input type="text" id="student-name" name="student-name">
+        <label for="student-email">Email: </label>
+        <input type="email" id="student-email" name="student-email">
+        <label for="student-birth">D.O.B: </label>
+        <input type="date" id="student-birth" name="student-birth">
+      </section>
+      <section></section>
+      <section></section>
+    </form>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>
