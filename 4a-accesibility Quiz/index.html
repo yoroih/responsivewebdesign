@@ -18,28 +18,97 @@
     <h1>HTML/CSS Quiz</h1>
     <nav>
       <ul>
-        <li><a href="">INFO</a></li>
-        <li><a href="">HTML</a></li>
-        <li><a href="">CSS</a></li>
+        <li><a href="#student-part">INFO</a></li>
+        <li><a href="#html-part">HTML</a></li>
+        <li><a href="#css-part">CSS</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
       <section class="section-group" role="region" aria-labelledby="student-info">
-        <h2 class="underlined">Student Info</h2>
-        <label for="student-name">Name: </label>
-        <input type="text" id="student-name" name="student-name">
-        <label for="student-email">Email: </label>
-        <input type="email" id="student-email" name="student-email">
-        <label for="student-birth">D.O.B: </label>
-        <input type="date" id="student-birth" name="student-birth">
+        <h2 class="underlined" id="student-part">Student Info</h2>
+        <div class="label-input-cont">
+          <label for="student-name">Name: </label>
+          <input type="text" id="student-name" name="student-name">
+        </div>
+        <div class="label-input-cont">
+          <label for="student-email">Email: </label>
+          <input type="email" id="student-email" name="student-email">
+        </div>
+        <div class="label-input-cont">
+          <label for="student-birth">D.O.B:<span class="sr-only">(Date of Birth)</span></label>
+          <input type="date" id="student-birth" name="student-birth">
+        </div>
       </section>
-      <section></section>
-      <section></section>
+
+      <section class="section-group">
+        <h2 class="underlined" id="html-part">HTML</h2>
+        <div class="questions">
+          <p>1</p>
+          <fieldset>
+            <legend>
+              The legend element represents a caption for the content of its parent fieldset element
+            </legend>
+            <ul>
+              <li>
+                <label for="q1-t"><input type="radio" id="q1-t" name="question1" value="true"> True</label>
+              </li>
+              <li>
+                <label for="q1-f"><input type="radio" id="q1-f" name="question1" value="False"> False</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="questions">
+          <p>2</p>
+          <fieldset>
+            <legend>
+              A label element nesting an input element is required to have a for attribute with the same value as the input's id
+            </legend>
+              <ul>
+                <li>
+                  <label for="q2-t"><input type="radio" id="q2-t" name="question2" value="true"> True</label>
+                </li>
+                <li>
+                  <label for="q2-f"><input type="radio" id="q2-f" name="question2" value="false"> False</label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
+      </section>
+      
+      <section class="section-group">
+        <h2 class="underlined" id="css-part">CSS</h2>
+        <div class="css-tags">
+          <label>Are you a frontend developer?</label>
+          <select>
+            <option selected disabled value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+      
+          <label>Can you leave us some feedback:</label>
+          <textarea placeholder="Write a feedback"></textarea>
+        </div>
+      </section>
+
+      <button type="submit">Send</button>
+    
     </form>
   </main>
-  <footer></footer>
-  
+  <footer>
+    <h5>
+			Developed by <a class="reference" href="https://www.linkedin.com/in/roy-quispe-p/" target="_blank"><strong>Yoroi</strong></a> <a class="reference" target="_blank" href="https://github.com/yoroih"> &#x2608; </a>
+		</h5>
+    <p class="footer">
+			Examples and information taken from <a class="reference" target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freecodecamp.org</a>
+		</p>
+    <address>
+      <a class="reference" href="https://freecodecamp.org" target="_blank">freeCodeCamp</a><br />
+      San Francisco, California, USA
+    </address>
+  </footer>
 </body>
 </html>

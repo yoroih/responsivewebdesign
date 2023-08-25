@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+}
+
+
 body{
   background-color: #32324b;
   color: #f5f6f7;
@@ -12,7 +17,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #f1be32;
+  border-bottom: 3px solid #e6d4a3;
+  position: fixed;
+  top: 0;
+
 }
 
 #logo{
@@ -24,9 +32,13 @@ header{
 }
 
 h1{
-  color: #f1be32;
+  color: #f1c754;
   text-align: center;
   font-size: min(5vw, 1.5em);
+}
+
+h2{
+  padding-top: 55px;
 }
 
 nav{
@@ -66,13 +78,145 @@ li>a{
 .section-group{
   max-width: 600px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .underlined{
   border-bottom: 4px solid white;
 }
 
+.label-input-cont{
+  display: flex;
+  margin: 10px;
+}
+
+.label-input-cont label{
+  width: 60px;
+  margin-left: 10%;
+  align-self: center;
+}
+
+.label-input-cont input{
+  width: 70%;
+  padding: 0;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #b7b7eb;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.question{
+  margin: 0 auto;
+}
+
+p::before{
+  content: "Question #";
+}
+
+p {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+fieldset{
+  border: none;
+  padding-bottom: 0;
+}
+
+fieldset>ul{
+  margin: 0;
+  padding: 10px 0 0 0 ;
+}
+
+ul>li{
+  list-style: none;
+}
+
+.css-tags{
+  display: flex;
+  flex-direction: column;
+}
+
+.css-tags>label{
+margin-left: 16%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+select{
+  width: 70%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #b7b7eb;
+  padding: 0 10px;
+  align-self: center;
+}
+
+textarea{
+  width: 65%;
+  height: 60px;
+  border-radius: 10px;
+  resize: none;
+  background-color: #b7b7eb;
+  font-weight: bold;
+  padding: 10px;
+  align-self: center;
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+  width: 10%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #8383af;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+/*FOOTER*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1b32;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer>h5{
+  margin: 0;
+}
+
+footer>p{
+  font-size: 12px;
+  margin: 2px;
+}
+
+.reference{
+  color: white;
+}
 
 
 
