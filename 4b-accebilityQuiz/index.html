@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Global-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Principal-->
+  <meta name="title" content="HTML/CSS Quiz to practice accesibility 📋">
+  <meta name="description" content="A website for a quiz about HTML and CSS, designed to practice making things accessible using HTML and CSS">
+  <link rel="icon" href="image/favicon-32x32.png" type="image/png">
+  <title>Layout Quiz 📋</title>
+  <!--Style-->
+  <link rel="stylesheet" href="/4b-accebilityQuiz/style.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp logo">
+    <h1>HTML/CSS Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="">INFO</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section>
+        <h2 class="underline" id="student-info">Student Info</h2>
+        <label for="student-name">Name: </label><input type="text" id="student-name" name="student-name" pattern="[a-zA-ZÑñ\s]+">
+        <br>
+        <label for="student-email">Email: </label><input type="email" id="student-email" name="student-email" pattern="^[\wñÑ]+@[\w]+\.[a-zA-Z]{2,}$">
+        <br>
+        <label for="student-birth">D.o.B: </label><input type="date" id="student-birth" name="student-birth">
+      </section>
+
+      <section>
+        <h2 class="underline" id="html">HTML</h2>
+        <p>1</p>
+        <fieldset>
+          <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+          <label for="q1-o1"><input type="radio"id="q1-o1" name="q1" value="true"> True</label>
+          <br>
+          <label for="q1-02"><input type="radio"id="q1-o2" name="q1" value="false"> False</label>
+        </fieldset>
+
+        <p>2</p>
+        <fieldset>
+          <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+          <label for="q2-o1"><input type="radio" id="q2-o1" name="q2" value="true"> True</label>
+          <br>
+          <label for="q2-o2"><input type="radio" id="q2-o2" name="q2" value="false"> False</label>
+        </fieldset>
+      </section>
+
+      <section>
+        <h2 class="underline" id="css">CSS</h2>
+        <label for="frontend-question" class="last-section">Are you a frontend developer?</label>
+        <select id="frontend-question" name="frontend-question">
+          <option value="" selected disabled>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="feedback"  class="last-section">Can you leave us some feedback:</label>
+        <textarea id="feedback" cols="30" rows="3"></textarea>
+      </section>
+
+      <button type="submit">SEND</button>
+    </form>
+  </main>
+  <footer>
+    <h5>
+			Developed by <a class="reference" href="https://www.linkedin.com/in/roy-quispe-p/" target="_blank"><strong>Yoroi</strong></a> <a class="reference" target="_blank" href="https://github.com/yoroih"> &#x2608; </a>
+		</h5>
+    <p class="footer">
+			Examples and information taken from <a class="reference" target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freecodecamp.org</a>
+		</p>
+    <address>
+      <a class="reference" href="https://freecodecamp.org" target="_blank">freeCodeCamp</a><br />
+      San Francisco, California, USA
+    </address>
+  </footer>
+</body>
+</html>
